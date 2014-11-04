@@ -48,17 +48,9 @@ fs.readdir(__dirname + '/i18n/', function(err, files){
 
 var supported = new locale.Locales(supported_langs);
 
-var REDIRECT_TO_NEW_DOMAIN = 1;
-
 connect()
     .use(connect.static(__dirname + '/static'))
     .use(function(req, res){
-
-        if (REDIRECT_TO_NEW_DOMAIN) {
-            res.writeHead(301, {'Location': 'http://haxcolors.com'});
-            res.end();
-            return;
-        }
 
         var chosen_lang = req.url.split('/')[1]; //you have chosen
         if (!(chosen_lang in lang_json)) {
