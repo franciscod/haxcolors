@@ -1,0 +1,14 @@
+{
+  "name": "haxcolors",
+  "version": "0.0.2",
+  "dependencies": {
+    "connect": "~2.13.0",
+    "swig": "~0.14.0",
+    "locale": "*",
+    "marked": "*"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  }
+}

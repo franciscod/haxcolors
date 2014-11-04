@@ -1,0 +1,55 @@
+{
+  "langname": "polski",
+  "fblocale": "pl_PL",
+  "title": "HaxColors by FD",
+  "create": "Utwórz",
+  "lead_text": [
+    " YEAH!!! Twórz własne kolory do [HaxBall](http://haxball.com) z pomocą komendy /colors w prosty sposób!"
+  ],
+  "about": "O stronie",
+  "about_text": [
+    "Ta strona jest objęta [Licencją MIT](LICENSE.txt), i używa ",
+    "[Bootstrap](http://twitter.github.io/bootstrap), [ZeroClipboard](https://github.com/zeroclipboard/ZeroClipboard) oraz [jscolor](http://jscolor.com). Dzięki!",
+    "",
+    "Jeżeli masz jakiś problem lub sugestię, proszę skomentuj w dyskusji poniżej.",
+    "",
+    "**POSZUKIWANI: translatorzy!**"
+  ],
+  "usage": " Użycie",
+  "usage_text": [
+    "Jeżeli wkleisz (prawidłową) komendę /colors w belce poniżej, otrzymasz podgląd i będziesz mógł zmodyfikować go :)",
+    "",
+    "Zmienianie kolorów:",
+    "",
+    "- Kliknij na podglądzie (przy zmienianiu koloru avatara, kliknij w środek kółka)",
+    "- lub Dopasuj kolory po lewej",
+    "",
+    "Kiedy skończysz, skopiuj komendę spod spodu i wkleją ją do HaxBallowego chata.",
+    "",
+    "Porada: musisz być adminem roomu!"
+  ],
+  "settings": "Ustawienia",
+  "team": "Drużyna",
+  "colors": "Kolory #",
+  "colorsn": [
+    "1 kolor",
+    "2 kolory",
+    "3 kolory"
+  ],
+  "values": "Wartości",
+  "values_labels": [
+    "kąt",
+    "tekst avatara",
+    "kolor tekstu",
+    "kolor 1",
+    "kolor 2",
+    "kolor 3"
+  ],
+  "preview": "Podgląd",
+  "preview_text": [
+    "Możesz kliknąć i zmienić kolory"
+  ],
+  "command": "Komenda",
+  "copy": "Skopiuj",
+  "credits": "translated by Falnin"
+}

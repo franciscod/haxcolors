@@ -1,0 +1,54 @@
+{
+  "langname": "italiano",
+  "fblocale": "it_IT",
+  "title": "HaxColors creato da FD",
+  "create": "Crea",
+  "lead_text": [
+    "YEAH!!! Crea maglie personalizzate per [HaxBall](http://haxball.com) con il comando /colors!"
+  ],
+  "about": "Riguardo il sito",
+  "about_text": [
+    "Il sito č sotto la [licenza MIT](LICENSE.txt), e usa [Bootstrap](http://twitter.github.io/bootstrap), [ZeroClipboard](https://github.com/zeroclipboard/ZeroClipboard) e [jscolor](http://jscolor.com). Grazie!",
+    "",
+    "Se hai un dubbio o una domanda, perfavore commenta qui sotto.",
+    "",
+    "**WANTED: traduttori!**"
+  ],
+  "usage": "Modi d'uso",
+  "usage_text": [
+    "Se incolli un colore (valido) nella barra qui sotto, avrai un'anteprima e potrai anche modificarlo :)",
+    "",
+    "Per cambiare i colori:",
+    "",
+    "- Clicca sull'anteprima (per cambiare colore dell'avatar al centro del cerchio)",
+    "- O aggiusta i dettagli sulla tua sinistra.",
+    "",
+    "Quando sei pronto, copia il comando qui sotto e incollalo sulla chat di Haxball.",
+    "",
+    "Nota importante: Devi essere admin della stanza!"
+  ],
+  "settings": "Opzioni",
+  "team": "Team",
+  "colors": "Colori #",
+  "colorsn": [
+    "1 colore",
+    "2 colori",
+    "3 colori"
+  ],
+  "values": "Valore",
+  "values_labels": [
+    "Angolo",
+    "Avatar",
+    "Colore dell'avatar",
+    "colore 1",
+    "colore 2",
+    "colore 3"
+  ],
+  "preview": "Anteprima",
+  "preview_text": [
+    "Puoi cliccare e cambiare i colori!"
+  ],
+  "command": "Comandi",
+  "copy": "Copia",
+  "credits": "tradotto da Luca Tolomello"
+}

@@ -1,0 +1,54 @@
+{
+  "langname": "english",
+  "fblocale": "en_US",
+  "title": "HaxColors created by FD",
+  "create": "Create",
+  "lead_text": [
+    "YEAH!!! Create custom colors for [HaxBall](http://haxball.com) with the /colors command, the easy way!"
+  ],
+  "about": "About",
+  "about_text": [
+    "This site is licensed under the [MIT License](LICENSE.txt), and uses [Bootstrap](http://twitter.github.io/bootstrap), [ZeroClipboard](https://github.com/zeroclipboard/ZeroClipboard) and [jscolor](http://jscolor.com). Thanks!",
+    "",
+    "If you have any issue or suggestion, please post it below.",
+    "",
+    "**WANTED: translators!**"
+  ],
+  "usage": "Usage",
+  "usage_text": [
+    "If you paste a (valid) /colors command into the bar below, you will get the preview and be able to modify it :)",
+    "",
+    "To change colors:",
+    "",
+    "- Click on the preview (to change avatar color - click on the center of the circle)",
+    "- Or adjust parameters on the left",
+    "",
+    "When you're ready, copy the command received at the bottom and paste it into the HaxBall chat bar.",
+    "",
+    "Note: you have to be an admin of the room!"
+  ],
+  "settings": "Settings",
+  "team": "Team",
+  "colors": "Colors #",
+  "colorsn": [
+    "1 color",
+    "2 colors",
+    "3 colors"
+  ],
+  "values": "Values",
+  "values_labels": [
+    "angle",
+    "avatar text",
+    "text color",
+    "color 1",
+    "color 2",
+    "color 3"
+  ],
+  "preview": "Preview",
+  "preview_text": [
+    "You can click and change the colors!"
+  ],
+  "command": "Command",
+  "copy": "Copy",
+  "credits": "translation improved by ^_^ (Arrows) - a.k.a. the happy cow"
+}

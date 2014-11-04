@@ -1,0 +1,54 @@
+{
+  "langname": "português",
+  "fblocale": "pt_BR",
+  "title": "HaxColors criado por FD",
+  "create": "Criar",
+  "lead_text": [
+    "OBA!!! Crie avatares para [HaxBall](http://haxball.com) com o comando /colors, bem simples!"
+  ],
+  "about": "Sobre",
+  "about_text": [
+    "Esse site esta sob a [Licença MIT](LICENSE.txt), e usa [Bootstrap](http://twitter.github.io/bootstrap), [ZeroClipboard](https://github.com/zeroclipboard/ZeroClipboard) e [jscolor](http://jscolor.com). Obrigado!",
+    "",
+    "Se tiver qualquer problema ou ideia, por favor comente logo abaixo!",
+    "",
+    "**WANTED: translators!**"
+  ],
+  "usage": "Como usar",
+  "usage_text": [
+    "Se você colar um comando válido (/colors) na barra logo abaixo, você pode ver sua prévia e então modificá-lo :)",
+    "",
+    "Para alteração das cores:",
+    "",
+    "- Clique na prévia (para alteração da cor do avatar clique na região de cada cor);",
+    "- ou altere as opções da esquerda;",
+    "",
+    "Quando estiver terminado, copie o comando gerado abaixo e cole-o no chat do Haxball.",
+    "",
+    "Nota: você precisa ser um administrador da sala!"
+  ],
+  "settings": "Ferramentas",
+  "team": "Time",
+  "colors": "# Cores",
+  "colorsn": [
+    "1 cor",
+    "2 cores",
+    "3 cores"
+  ],
+  "values": "Valores",
+  "values_labels": [
+    "ângulo",
+    "texto avatar",
+    "cor do texto",
+    "cor 1",
+    "cor 2",
+    "cor 3"
+  ],
+  "preview": "Previa",
+  "preview_text": [
+    "Você pode clicar em cada cor para alterá-la!"
+  ],
+  "command": "Comando",
+  "copy": "Copiar",
+  "credits": "traduzido por cesar11br (muito obrigado! :D)"
+}

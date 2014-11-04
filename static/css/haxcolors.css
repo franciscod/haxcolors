@@ -1,0 +1,73 @@
+body { padding-top: 60px; }
+
+div.preview { position: relative; } 
+.preview div { position:absolute; border-radius: 100%; }
+.preview div.border { background-color: #000000; }
+
+.big.preview div { width: 140px; height:140px; cursor: crosshair;}
+.big.preview div.border { left: 50px; top:50px; padding:5px; }
+.big.preview .avatar { text-align:center; font: bold 5em Arial; pointer-events: none; top: 0.5em; }
+
+.mini.preview, .mini.preview div { cursor: default !important; }
+
+.mini.preview div { width: 28px; height:28px;}
+.mini.preview div.border { left: 10px; top:10px; padding:2px; }
+.mini.preview .avatar { text-align:center; font: 18px "Arial Black"; pointer-events: none; top: 3px}
+
+#field { width: 250px; height:250px; background-color:#80A070; margin-top: 2em; }
+#minifield { width: 52px; height:52px; position:relative; top: 200px; left:200px; }
+html[dir=rtl] #minifield { width: 52px; height:52px; position:relative; top: 200px; left:0px !important;}
+#pca { width: 15%; height:15%; border: 1px black solid; opacity:0.5; left: 50%; top:50%; margin: -8%;}
+
+#out { width: 100%; }
+
+.form-horizontal .span2 .control-label { width: 80px; }
+.form-horizontal .span2 .controls { margin-left: 100px; }
+.form-horizontal .span3 .control-label { width: 120px; }
+.form-horizontal .span3 .controls { margin-left: 140px; }
+
+.jumbotron {
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 60px;
+    text-align: center;
+}
+.jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+}
+.jumbotron p {
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.command {
+    height: auto;
+    overflow: hidden;
+}
+
+.command .right {
+    width: 80px;
+    float: right;
+    text-align: right;
+}
+
+.command .left {
+    float: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: auto;
+}
+
+#newhaxco {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 40px;
+    background-color: white;
+    padding: 20px;
+}

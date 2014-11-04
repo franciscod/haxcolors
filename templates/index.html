@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}"{% if rtl -%} dir="rtl"{%- endif %}>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A tool for creating '/colors' commands for customizing Haxball colors.">
+    <meta name="author" content="Francisco Demartino <demartino.francisco AT gmail>">
+    <meta name="google-site-verification" content="Qc8z9x2qf8UiORPvQIdtzTWhDoCkqUNjFYIMlyjdJ5I" />
+    <!--
+    The MIT License (MIT)
+
+    Copyright (c) 2013 Francisco Demartino
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the "Software"), to deal in
+    the Software without restriction, including without limitation the rights to
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+    the Software, and to permit persons to whom the Software is furnished to do so,
+    subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    -->
+    <link href="css/haxcolors.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="fb-root"></div>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">HaxColors</a>
+            <ul class="nav">
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                  <i class="icon-globe icon-white"></i><b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  {% for lang in langnames -%}
+                  <li><a href="/{{ lang[0] }}">{{ lang[1]|title }}</a></li>
+                  {%- endfor %}
+                </ul>
+              </li>
+              <li class="hcnav active"><a href="#create">{{ create }}</a></li>
+              <li class="hcnav"><a href="#about">{{ about }}</a></li>
+            </ul>
+              <div id="social" class="navbar-text pull-right">
+                  <div class="fb-like" data-href="http://haxcolors.herokuapp.com" 
+                        data-send="false" data-layout="button_count" data-width="100" 
+                        data-show-faces="false">
+                  </div>
+                  <a href="https://twitter.com/share" class="twitter-share-button" 
+                      data-text="Create custom HaxBall colors!" data-via="FD123" 
+                      data-hashtags="HaxBall">Tweet</a>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 {% if rtl -%} dir="ltr"{%- endif %}>HaxColors!</h1>
+                {{ lead_text|marked }}
+         </div>
+        <div class="tab-content">
+
+          <div class="tab-pane" id="about">
+            <div class="row">
+                <div class="offset2 span8">
+                <h2>{{ about }}</h2>
+                  {{ about_text|marked }}
+                </div>
+            </div>
+          </div>
+
+          <div class="tab-pane active" id="create">
+            <div class="row">
+                <div class="offset2 span8">
+                  <h2>{{ usage }}</h2>
+                    {{ usage_text|marked }}
+                </div>
+            </div>
+            <div class="well">
+              <div class="row form-horizontal">
+                    <div class="offset1 span2">
+                        <h3>{{ team }}</h3>
+                        <div class="control-group">
+                          <label class="control-label">red</label>
+                          <div class="controls">
+                              <input type='radio' id='tred' name='t' value='1' checked>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">blue</label>
+                            <div class="controls">
+                                <input type='radio' id='tblue' name='t' value='2'>
+                            </div>
+                        </div>
+                        <h3 style="padding-top:0">{{ colors }}</h3>
+                        <div class="control-group">
+                            <label class="control-label">{{ colorsn[0] }}</label>
+                            <div class="controls">
+                                <input type='radio' id='1col' name='c' value='1'>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">{{ colorsn[1] }}</label>
+                            <div class="controls">
+                                <input type='radio' id='2col' name='c' value='2'>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">{{ colorsn[2] }}</label>
+                            <div class="controls">
+                                <input type='radio' id='3col' name='c' value='3' checked>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                    <h3>{{ values }}</h3>
+                        <div class="control-group">
+                            <label class="control-label">{{ values_labels[0] }}</label>
+                            <div class="controls">
+                                <input type='number' class="input-mini" required min="0" max="360"  id='ang' value='60'><br/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">{{ values_labels[1] }}</label>
+                            <div class="controls">
+                                <input type='text' class="input-mini"  id='atex' value='FD'><br/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">{{ values_labels[2] }}</label>
+                            <div class="controls">
+                                <input class="input-mini color" type='text' id='cola' value='FFFFFF'><br/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" id="l1">{{ values_labels[3] }}</label>
+                            <div class="controls">
+                                <input class="input-mini color" type='text'  id='col1' value='0080ff'><br/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" id="l2">{{ values_labels[4] }}</label>
+                            <div class="controls">
+                                <input class="input-mini color" type='text'  id='col2' value='004077'><br/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" id="l3">{{ values_labels[5] }}</label>
+                            <div class="controls">
+                                <input class="input-mini color" type='text'  id='col3' value='002033'><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset1 span4">
+                        <h2>{{ preview }}</h2>
+                        {{ preview_text|marked }}
+                         <div class="big preview field" id="field">
+                            <div class="border">
+                                <div class="c1" id="pc1"></div>
+                                <div class="c2" id="pc2"></div>
+                                <div class="c3" id="pc3"></div>
+                                <div id="pca"></div>
+                                <div class="avatar" id="av">FD</div>
+                            </div>
+                             <div class="mini preview field" id="minifield">
+                                <div class="border">
+                                    <div class="c1" id="mpc1"></div>
+                                    <div class="c2" id="mpc2"></div>
+                                    <div class="c3" id="mpc3"></div>
+                                    <div class="avatar">FD</div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </div> 
+              <div class="row">
+                <div class="offset1 span9">
+                  <h2>{{ command }}</h2>
+                  <div class="command">
+                    <div class="right">
+                      <button class="btn btn-primary" id="copy-button" data-clipboard-target="out">{{ copy }}</button>
+                    </div>
+                    <div class="left">
+                      <input type='text' id='out' name='out' {% if rtl -%} dir="ltr"{%- endif %}>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer text-center">
+            {{ credits }}
+        </div>
+        <div id="newhaxco">
+            <a href="http://haxcolors.com">Check out the new HaxColors site on http://haxcolors.com !</a>
+        </div>
+        <hr>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src='js/jscolor.js'></script>
+        <script src='js/ZeroClipboard.min.js'></script>
+        <script src="js/haxcolors.js"></script>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'haxcolors'; 
+            var disqus_identifier = 'newid309492'; 
+            var disqus_url = 'http://haxcolors.herokuapp.com/'; 
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div> 
+  </body>
+</html>
